@@ -1,0 +1,5 @@
+File ~/level02.pcap contains a dump of network packets. Using tcpick to read that file (tcpick -C -yP -r level02.pcap) tells us that someone tried to connect to hostname wwwbugs over the network, all information is in plain text and not encrypted.
+
+In the output file tcpick_result.txt we see that the user inputted text for the password, . characters being non-displayable characters we assume that it's the user inputting backspaces.
+
+Password: ft_waNDReL0L
