@@ -1,0 +1,3 @@
+In file /etc/passwd, encrypted password for flag01 is present. We decrypted it using John The Ripper (john --incremental hashes.txt)
+
+Password: abcdefg
