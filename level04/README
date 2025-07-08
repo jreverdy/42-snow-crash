@@ -1,0 +1,5 @@
+The file level04.pl contains a Perl script. A copy of this file at /var/www/level04 is hosted at localhost:4747 over http, which makes the script execute as root. This Perl script takes the CGI parameter "x" and feeds it into a subroutine that echoes it back using Perl backticks. We can inject a command execution through the parameter x (curl http://localhost:4747?x="| echo hello").
+
+By injecting the command /bin/getflag we can bypass finding the password for flag04 and getting the flag for level05 directly.
+
+There is no password for flag04 in this level.
