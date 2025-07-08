@@ -1,0 +1,3 @@
+At the root level03, there is a file called level03 that is an executable file with the s permissions, allowing us to execute that file as root without any restriction. This executable file calls the system function with argument "/usr/bin/env echo Exploit me" to print "Exploit me" to the terminal. We can make this program execute the getflag command instead as root by creating a symbolic of /bin/getflag at /tmp/echo, and executing level03 after setting PATH to /tmp:$PATH.
+
+There is no password for flag03 for this level as we call getflag directly.
