@@ -1,0 +1,5 @@
+Every 2 minutes the script /usr/sbin/openarenaserver gets excuted by user flag05, as shown by the crontab line sent by email to user level05 upon login. This script executes all bash scripts inside directory /opt/openarenaserver then deletes them.
+
+By creating a script that calls /bin/getflag and outputs the result to /tmp/flag we can let the level05 user read the result.
+
+There is no password for flag05 in this level.
