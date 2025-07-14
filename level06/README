@@ -1,0 +1,9 @@
+Similarily to the two previous levels, this is a code injection vulnerability. The PHP script level06.php reads the file provided in the first argument, and replaces the pattern [x something] with y("something"), then using the now deprecated /e modifier, the script executes the result y("something"). Because the capture is outputted back between double quotes, we can inject code execution using ${}, which will execute any PHP code in between the two braces. Additionally, whatever we write in between ` characters in PHP executes the code in a shell and returns the standard output of the command.
+
+We can inject and execute code that will give us the flag for level07 by providing a file that has the following contents:
+[x ${`getflag`}].
+
+Unfortunately, this will fail if not called using the appropriate user. The level06 executable usurps user flag06 as seen in level03 then executes level06.php, which allows us to execute getflag as if we were user flag06.
+
+https://www.php.net/manual/en/language.operators.execution.php#language.operators.execution
+https://www.php.net/manual/en/language.variables.variable.php
