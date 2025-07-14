@@ -1,0 +1,5 @@
+The program level09 encodes the string passed as the first argument. Each character is offseted by its position in the string (foreach character, character = character + index). We write a program that does the reverse (foreach character, character = character - index).
+
+This allows us to decode the contents of the token file, which contains the encoded password for flag09.
+
+Password: f3iji1ju5yuevaus41q1afiuq 
