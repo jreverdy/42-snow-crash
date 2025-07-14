@@ -1,0 +1,3 @@
+The file level07 is an executable file that can be executed as user flag07 (see s file permission). This executable constructs a command by appending the environment variable LOGNAME to /bin/echo then executes it. The string is not escaped properly and is prone to injection attacks. By setting LOGNAME="; getflag", the command line "/bin/echo; getflag" will get executed, which will execute getflag as flag07 user instead of echoing "; getflag".
+
+There is no password as we directly execute getflag by usurping flag07

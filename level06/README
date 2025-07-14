@@ -7,3 +7,5 @@ Unfortunately, this will fail if not called using the appropriate user. The leve
 
 https://www.php.net/manual/en/language.operators.execution.php#language.operators.execution
 https://www.php.net/manual/en/language.variables.variable.php
+
+There is no password in this level as we directly execute getflag by usurping flag06
