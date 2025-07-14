@@ -1,0 +1,6 @@
+The executable file level08 reads a file and prints it, but it prevents any file containing the substring "token" from being read from. This is to prevent the user from reading the file ~/token which probably contains a password either for flag08 or level09. By creating a symbolic link using command "ln -s ~/token /tmp/token", we can read the token file by passing /tmp/token to level08.
+
+Like in the previous exercises, the executable allows us to usurp the user flag08, which is why reading the token file is permitted.
+The token file contains the password for flag08.
+
+Password: quif5eloekouj29ke0vouxean
